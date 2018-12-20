@@ -1,7 +1,14 @@
 import React from 'react'
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
+import {Icon, Point} from 'leaflet'
 
 import znamenitosti from '../data/znamenitosti.json'
+
+const ikonica = new Icon({
+  iconUrl: require('../assets/images/location-pin.svg'),
+  iconSize: new Point(60, 75),
+  className: 'leaflet-icon'
+});
 
 export default class SimpleExample extends React.Component {
   constructor() {
@@ -17,9 +24,13 @@ export default class SimpleExample extends React.Component {
     const position = [this.state.lat, this.state.lng];
 
     const markeriJsx = znamenitosti.map(x => {
+      // povezati ikonice sa kategorijom
       const position = [x.lokacija.lat, x.lokacija.lon];
       return (
-        <Marker position={position} key={x.id}>
+        <Marker 
+          position={position}
+          icon={ikonica}
+          key={x.id}>
         <Popup>
           <img src={x.slika} alt={x.naslov} />
           <h3>{x.naslov}</h3>
