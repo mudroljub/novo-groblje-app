@@ -13,6 +13,10 @@ code {
     monospace;
 }
 
+img {
+  max-width: 100%;
+}
+
 .leaflet-container {
   width: 100%;
   height: 600px;

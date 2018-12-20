@@ -1,0 +1,101 @@
+[
+    {
+        "id": 0,
+        "naslov": "Vinarija Podrum",
+        "podnaslov": "Lorem Ipsum",
+        "kategorija": "vinarija",
+        "slika": "http://www.vinopedia.rs/wp-content/uploads/2012/04/vinarija-Jovi%C4%87.jpg",
+        "lead_tekst": "Lorem ipsum dolor sit amet, usu te verear utamur, mel et posse dissentiunt, mei nobis principes urbanitas at.",
+        "glavni_tekst": "Per eruditi fabulas suavitate ea, ius ut hinc nullam, qui id simul accumsan dissentias. No has veri omittam. Fugit tantas malorum vis te, et essent blandit sit. Ne omnes appellantur sit, ne eos elit ullum populo.",
+        "lokacija": {
+            "lat": 44.808587,
+            "lon": 20.494485
+        },
+        "GPS_coordinates": {
+            "lat": 44.808587,
+            "lon": 20.494485
+        },
+        "galerija": []
+    },
+    {
+        "id": 1,
+        "naslov": "restoran Vetrenjača",
+        "podnaslov": "Lorem Ipsum Vetrenjača",
+        "kategorija": "restoran",
+        "slika": "http://www.pancevo.rs/sadrzaj/uploads/2016/02/12850994.jpg",
+        "lead_tekst": "Lorem ipsum dolor sit amet, usu te verear utamur, mel et posse dissentiunt, mei nobis principes urbanitas at.",
+        "glavni_tekst": "Per eruditi fabulas suavitate ea, ius ut hinc nullam, qui id simul accumsan dissentias. No has veri omittam. Fugit tantas malorum vis te, et essent blandit sit. Ne omnes appellantur sit, ne eos elit ullum populo.",
+        "lokacija": {
+            "lat": 44.808654,
+            "lon": 20.494973
+        },
+        "GPS_coordinates": {
+            "lat": 44.808654,
+            "lon": 20.494973
+        },
+        "galerija": [
+            "http://www.vetrenjaca.rs/images/3-main-restoran-vetrenjaca.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/09/58/ef/0e/vetrenjaca.jpg",
+            "https://www.kudazavikend.com/files/4826/normal/restoran_vetrenjaca_120.jpg",
+            "https://media-cdn.tripadvisor.com/media/photo-s/11/01/2a/f2/indoor.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "naslov": "kafic Voz",
+        "podnaslov": "Lorem Ipsum voz",
+        "kategorija": "restoran",
+        "slika": "https://media-cdn.tripadvisor.com/media/photo-s/07/72/fe/41/kafic-voz.jpg",
+        "lead_tekst": "Dolor sit amet, usu te verear utamur, mel et posse dissentiunt.",
+        "glavni_tekst": "Mei nobis principes urbanitas at. Per eruditi fabulas suavitate ea, ius ut hinc nullam, qui id simul accumsan dissentias. No has veri omittam. Fugit tantas malorum vis te, et essent blandit sit. Ne omnes appellantur sit, ne eos elit ullum populo.",
+        "lokacija": {
+            "lat": 44.808656,
+            "lon": 20.494801
+        },
+        "GPS_coordinates": {
+            "lat": 44.808656,
+            "lon": 20.494801
+        },
+        "galerija": [
+            "https://i.pinimg.com/originals/c2/4c/55/c24c55a4af0a556377b46b93cfede445.jpg",
+            "https://scontent.fbeg2-1.fna.fbcdn.net/v/t1.0-9/37724301_2007955592571100_918529634432188416_n.jpg?_nc_cat=104&_nc_ht=scontent.fbeg2-1.fna&oh=9968ab3e3f95d5e8b2b1202d7f8e0f59&oe=5CA2AC34",
+            "https://scontent.fbeg2-1.fna.fbcdn.net/v/t1.0-9/37746621_2007962359237090_8855033906383028224_o.jpg?_nc_cat=110&_nc_ht=scontent.fbeg2-1.fna&oh=1b0d962e097251fe76cde2516f15add9&oe=5C69D8A7"
+        ]
+    },
+    {
+        "id": 3,
+        "naslov": "Spomenik Milošu Crnjanskom",
+        "podnaslov": "Spomenik Milošu Crnjanskom",
+        "kategorija": "spomenik",
+        "slika": "http://turizam.bg-info.org/images/spomenici/1089_1_milos_crnjanski.jpg",
+        "lead_tekst": "Usu te verear utamur, mel et posse dissentiunt.",
+        "glavni_tekst": "Urbanitas at. Per eruditi fabulas suavitate ea, ius ut hinc nullam, qui id simul accumsan dissentias. No has veri omittam. Fugit tantas malorum vis te, et essent blandit sit. Ne omnes appellantur sit, ne eos elit ullum populo.",
+        "lokacija": {
+            "lat": 44.808503,
+            "lon": 20.493727
+        },
+        "GPS_coordinates": {
+            "lat": 44.808503,
+            "lon": 20.493727
+        },
+        "galerija": []
+    },
+    {
+        "id": 4,
+        "naslov": "Spomenik Patrijarhu Pavlu",
+        "podnaslov": "Spomenik Patrijarhu Pavlu",
+        "kategorija": "spomenik",
+        "slika": "http://ritamindjije.rs/wp-content/uploads/2018/11/pavle-1-717x480.jpg",
+        "lead_tekst": "Te verear utamur, mel et posse dissentiunt eruditi.",
+        "glavni_tekst": "Ius ut hinc nullam, qui id simul accumsan dissentias. No has veri omittam. Fugit tantas malorum vis te, et essent blandit sit. Ne omnes appellantur sit, ne eos elit ullum populo.",
+        "lokacija": {
+            "lat": 44.808106,
+            "lon": 20.494526
+        },
+        "GPS_coordinates": {
+            "lat": 44.808106,
+            "lon": 20.494526
+        },
+        "galerija": []
+    }
+]

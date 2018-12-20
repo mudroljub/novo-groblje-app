@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Mapa from "./Mapa";
+import Mapa from "./components/Mapa";
 import './App.css';
 
 class App extends Component {
