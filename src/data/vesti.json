@@ -1,7 +1,7 @@
 [
   {
       "id": 0,
-      "naslov": "Vinarija Podrum",
+      "naslov": "Otvaranje vinarije Podrum",
       "kategorija": "vinarija",
       "glavna_slika": "http://www.vinopedia.rs/wp-content/uploads/2012/04/vinarija-Jovi%C4%87.jpg",
       "lead_tekst": "Lorem ipsum dolor sit amet, usu te verear utamur, mel et posse dissentiunt, mei nobis principes urbanitas at.",
@@ -12,7 +12,7 @@
   },
   {
       "id": 1,
-      "naslov": "restoran Vetrenjača",
+      "naslov": "Renovira se restoran Vetrenjača",
       "kategorija": "restoran",
       "glavna_slika": "http://www.pancevo.rs/sadrzaj/uploads/2016/02/12850994.jpg",
       "lead_tekst": "Lorem ipsum dolor sit amet, usu te verear utamur, mel et posse dissentiunt, mei nobis principes urbanitas at.",
@@ -23,7 +23,7 @@
   },
   {
       "id": 2,
-      "naslov": "kafic Voz",
+      "naslov": "Promotivne cene u kafiću Voz",
       "kategorija": "restoran",
       "glavna_slika": "https://media-cdn.tripadvisor.com/media/photo-s/07/72/fe/41/kafic-voz.jpg",
       "lead_tekst": "Dolor sit amet, usu te verear utamur, mel et posse dissentiunt.",
@@ -34,7 +34,7 @@
   },
   {
       "id": 3,
-      "naslov": "Spomenik Milošu Crnjanskom",
+      "naslov": "Otkrivanje spomenika Milošu Crnjanskom",
       "kategorija": "spomenik",
       "glavna_slika": "http://turizam.bg-info.org/images/spomenici/1089_1_milos_crnjanski.jpg",
       "lead_tekst": "Usu te verear utamur, mel et posse dissentiunt.",
@@ -45,7 +45,7 @@
   },
   {
       "id": 4,
-      "naslov": "Spomenik Patrijarhu Pavlu",
+      "naslov": "Otkrivanje spomenika Patrijarhu Pavlu",
       "kategorija": "spomenik",
       "glavna_slika": "http://ritamindjije.rs/wp-content/uploads/2018/11/pavle-1-717x480.jpg",
       "lead_tekst": "Te verear utamur, mel et posse dissentiunt eruditi.",
