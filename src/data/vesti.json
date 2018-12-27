@@ -1,1 +1,57 @@
-[]
+[
+  {
+      "id": 0,
+      "naslov": "Otvaranje vinarije Podrum",
+      "kategorija": "vinarija",
+      "glavna_slika": "http://www.vinopedia.rs/wp-content/uploads/2012/04/vinarija-Jovi%C4%87.jpg",
+      "lead_tekst": "Lorem ipsum dolor sit amet, usu te verear utamur, mel et posse dissentiunt, mei nobis principes urbanitas at.",
+      "glavni_tekst": "Per eruditi fabulas suavitate ea, ius ut hinc nullam, qui id simul accumsan dissentias. No has veri omittam. Fugit tantas malorum vis te, et essent blandit sit. Ne omnes appellantur sit, ne eos elit ullum populo.",
+      "vreme_objavljivanja": "2018-10-10",
+      "galerija": [],
+      "video": []
+  },
+  {
+      "id": 1,
+      "naslov": "Renovira se restoran Vetrenjača",
+      "kategorija": "restoran",
+      "glavna_slika": "http://www.pancevo.rs/sadrzaj/uploads/2016/02/12850994.jpg",
+      "lead_tekst": "Lorem ipsum dolor sit amet, usu te verear utamur, mel et posse dissentiunt, mei nobis principes urbanitas at.",
+      "glavni_tekst": "Per eruditi fabulas suavitate ea, ius ut hinc nullam, qui id simul accumsan dissentias. No has veri omittam. Fugit tantas malorum vis te, et essent blandit sit. Ne omnes appellantur sit, ne eos elit ullum populo.",
+      "vreme_objavljivanja": "2018-11-28",
+      "galerija": [],
+      "video": []
+  },
+  {
+      "id": 2,
+      "naslov": "Promotivne cene u kafiću Voz",
+      "kategorija": "restoran",
+      "glavna_slika": "https://media-cdn.tripadvisor.com/media/photo-s/07/72/fe/41/kafic-voz.jpg",
+      "lead_tekst": "Dolor sit amet, usu te verear utamur, mel et posse dissentiunt.",
+      "glavni_tekst": "Mei nobis principes urbanitas at. Per eruditi fabulas suavitate ea, ius ut hinc nullam, qui id simul accumsan dissentias. No has veri omittam. Fugit tantas malorum vis te, et essent blandit sit. Ne omnes appellantur sit, ne eos elit ullum populo.",
+      "vreme_objavljivanja": "2018-12-01",
+      "galerija": [],
+      "video": []
+  },
+  {
+      "id": 3,
+      "naslov": "Otkrivanje spomenika Milošu Crnjanskom",
+      "kategorija": "spomenik",
+      "glavna_slika": "http://turizam.bg-info.org/images/spomenici/1089_1_milos_crnjanski.jpg",
+      "lead_tekst": "Usu te verear utamur, mel et posse dissentiunt.",
+      "glavni_tekst": "Urbanitas at. Per eruditi fabulas suavitate ea, ius ut hinc nullam, qui id simul accumsan dissentias. No has veri omittam. Fugit tantas malorum vis te, et essent blandit sit. Ne omnes appellantur sit, ne eos elit ullum populo.",
+      "vreme_objavljivanja": "2018-12-10",
+      "galerija": [],
+      "video": []
+  },
+  {
+      "id": 4,
+      "naslov": "Otkrivanje spomenika Patrijarhu Pavlu",
+      "kategorija": "spomenik",
+      "glavna_slika": "http://ritamindjije.rs/wp-content/uploads/2018/11/pavle-1-717x480.jpg",
+      "lead_tekst": "Te verear utamur, mel et posse dissentiunt eruditi.",
+      "glavni_tekst": "Ius ut hinc nullam, qui id simul accumsan dissentias. No has veri omittam. Fugit tantas malorum vis te, et essent blandit sit. Ne omnes appellantur sit, ne eos elit ullum populo.",
+      "vreme_objavljivanja": "2018-12-15",
+      "galerija": [],
+      "video": []
+  }
+]
