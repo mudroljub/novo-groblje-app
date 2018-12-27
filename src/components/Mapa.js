@@ -16,8 +16,8 @@ export default class SimpleExample extends Component {
   constructor() {
     super()
     this.state = {
-      lat: 44.808364,
-      lng: 20.4939618,
+      lat: 44.8092138,
+      lng: 20.4871099,
       zoom: 17
     }
   }
