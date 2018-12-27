@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/novo-groblje-app/static/js/runtime~main.10836955.js"
   },
   {
-    "revision": "04530f5d1a37f408c6bc",
-    "url": "/novo-groblje-app/static/js/main.04530f5d.chunk.js"
+    "revision": "0cf7d527c117afb5571a",
+    "url": "/novo-groblje-app/static/js/main.0cf7d527.chunk.js"
   },
   {
     "revision": "38caa3db393ada55ad61",
     "url": "/novo-groblje-app/static/js/1.38caa3db.chunk.js"
   },
   {
-    "revision": "04530f5d1a37f408c6bc",
-    "url": "/novo-groblje-app/static/css/main.1eff8dca.chunk.css"
+    "revision": "0cf7d527c117afb5571a",
+    "url": "/novo-groblje-app/static/css/main.28d30987.chunk.css"
   },
   {
-    "revision": "a1e8ca2a73dd0c814639c70f95c02021",
+    "revision": "f888b2876d5f24adf66955a4d92c4add",
     "url": "/novo-groblje-app/index.html"
   }
 ];
