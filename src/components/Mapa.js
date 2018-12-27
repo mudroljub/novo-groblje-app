@@ -63,7 +63,7 @@ class Mapa extends Component {
           />
             {markeriJsx}
         </Map>
-        <img title="Center map" src={geoikonica} alt="geolocation" className="geoikonica" onClick={this.centerMap} />
+        <img title="Centriraj mapu" src={geoikonica} alt="geolocation" className="geoikonica" onClick={this.centerMap} />
       </React.Fragment>
     );
   }

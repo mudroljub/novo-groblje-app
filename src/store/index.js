@@ -5,8 +5,11 @@ const initialState = {
   filtrirane : znamenitosti
 }
 
-export const reducer = (state = initialState, { type, payload }) => {
-  switch (type) {
+export const reducer = (state = initialState, action) => {
+  switch (action.type) {
+
+    case "SET_FILTERED":
+      return {...state, filtrirane: action.filtrirane}
 
   default:
     return state

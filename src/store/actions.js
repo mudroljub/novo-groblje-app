@@ -1,4 +1,4 @@
-export const actionName = (payload) => ({
-  type: type,
-  payload
+export const setFiltered = filtrirane => ({
+  type: "SET_FILTERED",
+  filtrirane
 })
