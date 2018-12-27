@@ -23,7 +23,13 @@ export default class SimpleExample extends Component {
   }
 
   centerMap = () => {
-    console.log('centerMap')
+    navigator.geolocation.getCurrentPosition(position => {
+      const {latitude, longitude} = position.coords
+      this.setState({
+        lat: latitude,
+        lng: longitude,
+      })
+    })
   }
 
   render() {
@@ -54,7 +60,7 @@ export default class SimpleExample extends Component {
           />
             {markeriJsx}
         </Map>
-        <img src={geoikonica} alt="geolocation" className="geoikonica" onClick={this.centerMap} />
+        <img title="Center map" src={geoikonica} alt="geolocation" className="geoikonica" onClick={this.centerMap} />
       </React.Fragment>
     );
   }

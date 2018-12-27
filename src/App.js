@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux'
+// import {connect} from 'react-redux'
 
 import Mapa from "./components/Mapa";
 import Filteri from "./components/Filteri";
