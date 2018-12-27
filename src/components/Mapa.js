@@ -23,13 +23,14 @@ export default class SimpleExample extends Component {
   }
 
   centerMap = () => {
+    // https://stackoverflow.com/questions/3397585/navigator-geolocation-getcurrentposition-sometimes-works-sometimes-doesnt
     navigator.geolocation.getCurrentPosition(position => {
       const {latitude, longitude} = position.coords
       this.setState({
         lat: latitude,
         lng: longitude,
       })
-    })
+    }, error => alert("error"), {timeout: 5000})
   }
 
   render() {
