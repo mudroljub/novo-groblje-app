@@ -1,7 +1,7 @@
 {
   "main.css": "/novo-groblje-app/static/css/main.28d30987.chunk.css",
-  "main.js": "/novo-groblje-app/static/js/main.0cf7d527.chunk.js",
-  "main.js.map": "/novo-groblje-app/static/js/main.0cf7d527.chunk.js.map",
+  "main.js": "/novo-groblje-app/static/js/main.7595fc08.chunk.js",
+  "main.js.map": "/novo-groblje-app/static/js/main.7595fc08.chunk.js.map",
   "static/js/1.38caa3db.chunk.js": "/novo-groblje-app/static/js/1.38caa3db.chunk.js",
   "static/js/1.38caa3db.chunk.js.map": "/novo-groblje-app/static/js/1.38caa3db.chunk.js.map",
   "runtime~main.js": "/novo-groblje-app/static/js/runtime~main.10836955.js",
@@ -9,6 +9,6 @@
   "static/media/location-pin.svg": "/novo-groblje-app/static/media/location-pin.c8c08f5a.svg",
   "static/css/main.28d30987.chunk.css.map": "/novo-groblje-app/static/css/main.28d30987.chunk.css.map",
   "index.html": "/novo-groblje-app/index.html",
-  "precache-manifest.ef15cf49800f8b730c18d924a0f15ca7.js": "/novo-groblje-app/precache-manifest.ef15cf49800f8b730c18d924a0f15ca7.js",
+  "precache-manifest.521ce7c188e793be2d4c24a56c81d829.js": "/novo-groblje-app/precache-manifest.521ce7c188e793be2d4c24a56c81d829.js",
   "service-worker.js": "/novo-groblje-app/service-worker.js"
 }

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/novo-groblje-app/precache-manifest.ef15cf49800f8b730c18d924a0f15ca7.js"
+  "/novo-groblje-app/precache-manifest.521ce7c188e793be2d4c24a56c81d829.js"
 );
 
 workbox.clientsClaim();
