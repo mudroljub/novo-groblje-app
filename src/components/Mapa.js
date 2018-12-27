@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {Component} from 'react'
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
 import {Icon, Point} from 'leaflet'
 
+import geoikonica from "../assets/images/geolocation.png"
 import znamenitosti from '../data/znamenitosti.json'
 
 const ikonica = new Icon({
@@ -10,7 +11,8 @@ const ikonica = new Icon({
   className: 'leaflet-icon'
 });
 
-export default class SimpleExample extends React.Component {
+export default class SimpleExample extends Component {
+
   constructor() {
     super()
     this.state = {
@@ -20,9 +22,12 @@ export default class SimpleExample extends React.Component {
     }
   }
 
+  centerMap = () => {
+    console.log('centerMap')
+  }
+
   render() {
     const position = [this.state.lat, this.state.lng];
-
     const markeriJsx = znamenitosti.map(x => {
       // povezati ikonice sa kategorijom
       const position = [x.lokacija.lat, x.lokacija.lon];
@@ -38,17 +43,19 @@ export default class SimpleExample extends React.Component {
         </Popup>
       </Marker>
       )
-    }
-    )
+    })
 
     return (
-      <Map center={position} zoom={this.state.zoom}>
-        <TileLayer
-          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
-        />
-          {markeriJsx}
-      </Map>
+      <React.Fragment>
+        <Map center={position} zoom={this.state.zoom}>
+          <TileLayer
+            attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
+          />
+            {markeriJsx}
+        </Map>
+        <img src={geoikonica} alt="geolocation" className="geoikonica" onClick={this.centerMap} />
+      </React.Fragment>
     );
   }
 }
