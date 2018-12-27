@@ -8,13 +8,12 @@ class Filteri extends Component {
   }
 
   filtriraj = (e, kategorija) => {
-    const kategorije = e.target.checked 
-      ? [...this.state.kategorije, kategorija] 
-      : [...this.state.kategorije].filter(k => k !== kategorija)
-    this.setState({
-      kategorije: new Set(kategorije)
-    })
-    console.log(this.state)
+    const kategorije = new Set(this.state.kategorije) // kopira stanje
+    if (e.target.checked)
+      kategorije.add(kategorija)
+    else
+      kategorije.delete(kategorija)
+    this.setState({kategorije})
   }
 
   render() {
