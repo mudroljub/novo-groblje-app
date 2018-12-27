@@ -1,9 +1,9 @@
 import React, {Component} from 'react'
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet'
 import {Icon, Point} from 'leaflet'
+import {connect} from 'react-redux'
 
 import geoikonica from "../assets/images/geolocation.png"
-import znamenitosti from '../data/znamenitosti.json'
 
 const ikonica = new Icon({
   iconUrl: require('../assets/images/location-pin.svg'),
@@ -11,7 +11,7 @@ const ikonica = new Icon({
   className: 'leaflet-icon'
 });
 
-export default class SimpleExample extends Component {
+class Mapa extends Component {
 
   constructor() {
     super()
@@ -37,7 +37,7 @@ export default class SimpleExample extends Component {
 
   render() {
     const position = [this.state.lat, this.state.lng];
-    const markeriJsx = znamenitosti.map(x => {
+    const markeriJsx = this.props.filtrirane.map(x => {
       // povezati ikonice sa kategorijom
       const position = [x.lokacija.lat, x.lokacija.lon];
       return (
@@ -68,3 +68,9 @@ export default class SimpleExample extends Component {
     );
   }
 }
+
+const mapStateToProps = (state) => {
+  return {filtrirane: state.filtrirane}
+}
+
+export default connect(mapStateToProps)(Mapa)
