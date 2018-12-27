@@ -18,7 +18,8 @@ export default class SimpleExample extends Component {
     this.state = {
       lat: 44.8092138,
       lng: 20.4871099,
-      zoom: 17
+      zoom: 17,
+      bugfix: true,
     }
   }
 
@@ -27,8 +28,9 @@ export default class SimpleExample extends Component {
     navigator.geolocation.getCurrentPosition(position => {
       const {latitude, longitude} = position.coords
       this.setState({
-        lat: latitude,
+        lat: latitude + (this.state.bugfix ? 0.0000001 : -0.0000001),
         lng: longitude,
+        bugfix: !this.state.bugfix,
       })
     }, error => alert("error"), {timeout: 5000})
   }
