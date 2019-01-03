@@ -5,12 +5,6 @@ import {connect} from 'react-redux'
 
 import geoikonica from "../assets/images/geolocation.png"
 
-const ikonica = new Icon({
-  iconUrl: require('../assets/images/location-pin.svg'),
-  iconSize: new Point(60, 75),
-  className: 'leaflet-icon'
-});
-
 class Mapa extends Component {
 
   constructor() {
@@ -24,7 +18,6 @@ class Mapa extends Component {
   }
 
   centerMap = () => {
-    // https://stackoverflow.com/questions/3397585/navigator-geolocation-getcurrentposition-sometimes-works-sometimes-doesnt
     navigator.geolocation.getCurrentPosition(position => {
       const {latitude, longitude} = position.coords
       this.setState({
@@ -37,20 +30,28 @@ class Mapa extends Component {
 
   render() {
     const position = [this.state.lat, this.state.lng];
+
     const markeriJsx = this.props.filtrirane.map(x => {
-      // povezati ikonice sa kategorijom
+
       const position = [x.lokacija.lat, x.lokacija.lon];
+      // povezati ikonice sa kategorijom
+      const ikonica = new Icon({
+        iconUrl: require(`../assets/images/${x.kategorija}.svg`),
+        iconSize: new Point(60, 75),
+        className: 'leaflet-icon'
+      });
+
       return (
         <Marker 
-          position={position}
-          icon={ikonica}
-          key={x.id}>
-        <Popup>
-          <img src={x.slika} alt={x.naslov} />
-          <h3>{x.naslov}</h3>
-          <p>{x.lead_tekst}</p>
-        </Popup>
-      </Marker>
+            position={position}
+            icon={ikonica}
+            key={x.id}>
+          <Popup>
+            <img src={x.slika} alt={x.naslov} />
+            <h3>{x.naslov}</h3>
+            <p>{x.lead_tekst}</p>
+          </Popup>
+        </Marker>
       )
     })
 
@@ -63,7 +64,13 @@ class Mapa extends Component {
           />
             {markeriJsx}
         </Map>
-        <img title="Centriraj mapu" src={geoikonica} alt="geolocation" className="geoikonica" onClick={this.centerMap} />
+        <img 
+          title="Centriraj mapu" 
+          src={geoikonica} 
+          alt="geolocation" 
+          className="geoikonica" 
+          onClick={this.centerMap} 
+        />
       </React.Fragment>
     );
   }
