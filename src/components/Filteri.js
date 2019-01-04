@@ -1,31 +1,28 @@
 import React, { Component } from 'react'
-import {connect} from 'react-redux'
-import { setFiltered } from '../store/actions';
+import { connect } from 'react-redux'
+import { setCategories } from '../store/actions';
 
 class Filteri extends Component {
-  state = {
-    kategorije: new Set()
-  }
 
   filtriraj = (e, kategorija) => {
-    const kategorije = new Set(this.state.kategorije) // kopira stanje
+    const kategorije = new Set(this.props.kategorije) // kopira stanje
     if (e.target.checked)
       kategorije.add(kategorija)
     else
       kategorije.delete(kategorija)
-    this.setState({kategorije})
+    this.props.setCategories(kategorije)
   }
 
   render() {
     const kategorije = [...new Set(this.props.lokacije.map(x => x.kategorija))]
-  
-    const jsx = kategorije.map((kategorija, i) => 
-    <div key={i}>
-      <label>
-        <input type="checkbox" onChange={e => this.filtriraj(e, kategorija)} />
-        {kategorija}
-      </label>
-    </div>
+
+    const jsx = kategorije.map((kategorija, i) =>
+      <div key={i}>
+        <label>
+          <input checked={this.props.kategorije.has(kategorija)? true : false} type="checkbox" onChange={e => this.filtriraj(e, kategorija)} />
+          {kategorija}
+        </label>
+      </div>
     )
 
     return (
@@ -38,13 +35,14 @@ class Filteri extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    lokacije: state.lokacije, 
-    filtrirane: state.filtrirane
+    lokacije: state.lokacije,
+    filtrirane: state.filtrirane,
+    kategorije: state.kategorije
   }
 }
 
 const mapDispatchToProps = {
-  setFiltered
+  setCategories
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Filteri)
