@@ -26,9 +26,11 @@ class Filteri extends Component {
     )
 
     return (
-      <div>
-        {jsx}
-      </div>
+      <aside>
+        <div className="category-holder">
+          {jsx}
+        </div>
+      </aside>
     )
   }
 }

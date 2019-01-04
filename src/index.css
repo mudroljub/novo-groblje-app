@@ -1,11 +1,12 @@
 body {
   margin: 0;
-  padding: 20px;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 
 code {
@@ -13,13 +14,41 @@ code {
     monospace;
 }
 
+ h1 {
+   position: fixed;
+   z-index: 99999;
+   left: 80px;
+ }
+
+aside {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 250px;
+  z-index: 99999;
+  display: grid;
+  align-items: start;
+}
+
+.category-holder {
+  background-color: #fff;
+  border-left: 1px solid #cecece;
+  margin: 30px 20px 0 0;
+}
+
+.category-holder div {
+  padding: 10px 0;
+}
+
 img {
   max-width: 100%;
 }
 
 .leaflet-container {
-  width: 100%;
-  height: 600px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .geoikonica {
