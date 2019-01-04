@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import { setFiltered } from '../store/actions';
 
 class Filteri extends Component {
@@ -13,32 +13,34 @@ class Filteri extends Component {
       kategorije.add(kategorija)
     else
       kategorije.delete(kategorija)
-    this.setState({kategorije})
+    this.setState({ kategorije })
   }
 
   render() {
     const kategorije = [...new Set(this.props.lokacije.map(x => x.kategorija))]
-  
-    const jsx = kategorije.map((kategorija, i) => 
-    <div key={i}>
-      <label>
-        <input type="checkbox" onChange={e => this.filtriraj(e, kategorija)} />
-        {kategorija}
-      </label>
-    </div>
+
+    const jsx = kategorije.map((kategorija, i) =>
+      <div key={i}>
+        <label>
+          <input type="checkbox" onChange={e => this.filtriraj(e, kategorija)} />
+          {kategorija}
+        </label>
+      </div>
     )
 
     return (
-      <div>
-        {jsx}
-      </div>
+      <aside>
+        <div className="category-holder">
+          {jsx}
+        </div>
+      </aside>
     )
   }
 }
 
 const mapStateToProps = (state) => {
   return {
-    lokacije: state.lokacije, 
+    lokacije: state.lokacije,
     filtrirane: state.filtrirane
   }
 }
