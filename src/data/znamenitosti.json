@@ -97,5 +97,59 @@
             "lon": 20.494526
         },
         "galerija": []
+    },
+    {
+        "id": 5,
+        "naslov": "Spomenik herojima Prvog Svetskog rata",
+        "podnaslov": "Spomenik herojima Prvog Svetskog rata",
+        "kategorija": "spomenik",
+        "slika": "https://xdn.tf.rs/2015/11/04/Spomen-kosturnica-v.jpg",
+        "lead_tekst": "Te verear utamur, mel et posse dissentiunt eruditi.",
+        "glavni_tekst": "Ius ut hinc nullam, qui id simul accumsan dissentias. No has veri omittam. Fugit tantas malorum vis te, et essent blandit sit. Ne omnes appellantur sit, ne eos elit ullum populo.",
+        "lokacija": {
+            "lat": 44.8075492,
+            "lon": 20.4904985
+        },
+        "GPS_coordinates": {
+            "lat": 44.8075492,
+            "lon": 20.4904985
+        },
+        "galerija": []
+    },
+    {
+        "id": 6,
+        "naslov": "Ruski nekropolj u Beogradu",
+        "podnaslov": "Ruski nekropolj u Beogradu",
+        "kategorija": "spomenik",
+        "slika": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/%D0%A1%D0%BF%D0%BE%D0%BC%D0%B5%D0%BD_%D0%BA%D0%BE%D1%81%D1%82%D1%83%D1%80%D0%BD%D0%B8%D1%86%D0%B0_%D1%80%D1%83%D1%81%D0%BA%D0%BE%D0%BC_%D0%B2%D0%BE%D1%98%D0%BD%D0%B8%D1%86%D0%B8%D0%BC%D0%B0_%D0%BF%D0%BE%D0%B3%D0%B8%D0%BD%D1%83%D0%BB%D0%B8%D0%BC_%D1%83%D0%9F%D1%80%D0%B2%D0%BE%D0%BC_%D1%81%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%BE%D0%BC_%D1%80%D0%B0%D1%82%D1%83%2C_%D0%9D%D0%BE%D0%B2%D0%BE_%D0%93%D1%80%D0%BE%D0%B1%D1%99%D0%B5_%D1%83_%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%83_DSC_2359.jpg/800px-thumbnail.jpg",
+        "lead_tekst": "Te verear utamur, mel et posse dissentiunt eruditi.",
+        "glavni_tekst": "Ius ut hinc nullam, qui id simul accumsan dissentias. No has veri omittam. Fugit tantas malorum vis te, et essent blandit sit. Ne omnes appellantur sit, ne eos elit ullum populo.",
+        "lokacija": {
+            "lat": 44.8084163,
+            "lon": 20.488773
+        },
+        "GPS_coordinates": {
+            "lat": 44.8084163,
+            "lon": 20.488773
+        },
+        "galerija": []
+    },
+    {
+        "id": 7,
+        "naslov": "Groblje oslobodilaca Beograda",
+        "podnaslov": "Groblje oslobodilaca Beograda",
+        "kategorija": "spomenik",
+        "slika": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Groblje_oslobodilaca_beograda_1944.JPG/800px-Groblje_oslobodilaca_beograda_1944.JPG",
+        "lead_tekst": "Te verear utamur, mel et posse dissentiunt eruditi.",
+        "glavni_tekst": "Ius ut hinc nullam, qui id simul accumsan dissentias. No has veri omittam. Fugit tantas malorum vis te, et essent blandit sit. Ne omnes appellantur sit, ne eos elit ullum populo.",
+        "lokacija": {
+            "lat": 44.8108692,
+            "lon": 20.4853746
+        },
+        "GPS_coordinates": {
+            "lat": 44.8108692,
+            "lon": 20.4853746
+        },
+        "galerija": []
     }
 ]
