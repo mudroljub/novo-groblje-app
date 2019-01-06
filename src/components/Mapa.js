@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Map, TileLayer } from 'react-leaflet'
+import { Map, TileLayer, Polyline } from 'react-leaflet'
 import Markeri from './Markeri'
 
 import geoikonica from "../assets/images/geolocation.png"
@@ -35,6 +35,13 @@ export default class Mapa extends Component {
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
+          />
+          <Polyline
+            positions={[
+              [44.808106, 20.494526],
+              [44.808587, 20.494485],
+              [44.808654, 20.494973]
+            ]}
           />
           <Markeri />
         </Map>
