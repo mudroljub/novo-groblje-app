@@ -7,7 +7,7 @@ class MapaApp extends Component {
   render() {
     return (
         <React.Fragment>
-        <h1>Novo Groblje App</h1>
+        <h1 id="main-title">Novo Groblje App</h1>
         <Filteri/>
         <Mapa/>
         </React.Fragment>

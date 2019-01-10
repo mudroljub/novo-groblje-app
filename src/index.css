@@ -14,7 +14,7 @@ code {
     monospace;
 }
 
- h1 {
+#main-title {
    position: fixed;
    z-index: 99999;
    left: 80px;
@@ -27,7 +27,6 @@ aside {
   bottom: 0;
   height: 100%;
   width: 250px;
-  z-index: 99999;
   display: grid;
   align-items: start;
 }
@@ -36,6 +35,8 @@ aside {
   background-color: #fff;
   border-left: 1px solid #cecece;
   margin: 30px 20px 0 0;
+  z-index: 99999;
+  padding-left: 30px;
 }
 
 .category-holder div {
