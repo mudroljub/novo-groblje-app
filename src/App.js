@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
+import { Switch, Route } from "react-router-dom";
 
-import Mapa from "./components/Mapa";
-import Filteri from "./components/Filteri";
-import './App.css';
+import MapaApp from "./components/MapaApp";
+import Vesti from "./components/Vesti";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>Novo Groblje App</h1>
-        <Filteri/>
-        <Mapa/>
-      </div>
+      <Switch>
+      <Route exact path="/" component={MapaApp} />
+      <Route path="/vesti" component={Vesti} />
+      </Switch>
     );
   }
 }
