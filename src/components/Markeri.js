@@ -2,6 +2,7 @@ import React from 'react'
 import { Marker, Popup } from 'react-leaflet'
 import { Icon, Point } from 'leaflet'
 import { connect } from 'react-redux'
+import { Link } from "react-router-dom";
 import { setFiltered } from '../store/actions';
 
 function Markeri(props) {
@@ -22,7 +23,14 @@ function Markeri(props) {
           icon={ikonica}
           key={item.id}>
           <Popup>
-            <img src={item.slika} alt={item.naslov} />
+            <Link
+              key={item.id}
+              to={{
+                pathname: `/znamenitost/${item.id}`
+              }}
+            >
+              <img src={item.slika} alt={item.naslov} />
+            </Link>
             <h3>{item.naslov}</h3>
             <p>{item.lead_tekst}</p>
           </Popup>

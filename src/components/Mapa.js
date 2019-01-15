@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import { Map, TileLayer, Polyline } from 'react-leaflet'
 import Markeri from './Markeri'
 import rute from "../data/rute.json"
@@ -19,17 +19,17 @@ export default class Mapa extends Component {
 
   centerMap = () => {
     navigator.geolocation.getCurrentPosition(position => {
-      const {latitude, longitude} = position.coords
+      const { latitude, longitude } = position.coords
       this.setState({
         lat: latitude + (this.state.bugfix ? 0.0000001 : -0.0000001),
         lng: longitude,
         bugfix: !this.state.bugfix,
       })
-    }, error => alert("error"), {timeout: 5000})
+    }, error => alert("error"), { timeout: 5000 })
   }
 
   render() {
-    
+
     return (
       <React.Fragment>
         <Map center={[this.state.lat, this.state.lng]} zoom={this.state.zoom}>
@@ -42,12 +42,12 @@ export default class Mapa extends Component {
           />
           <Markeri />
         </Map>
-        <img 
-          title="Centriraj mapu" 
-          src={geoikonica} 
-          alt="geolocation" 
-          className="geoikonica" 
-          onClick={this.centerMap} 
+        <img
+          title="Centriraj mapu"
+          src={geoikonica}
+          alt="geolocation"
+          className="geoikonica"
+          onClick={this.centerMap}
         />
       </React.Fragment>
     );
